@@ -10,3 +10,11 @@ from keras.models import load_model
 # -------------------------------
 st.title("🐱🐶 Cats vs Dogs Classifier")
 st.write("Upload an image and the model will predict whether it's a **Cat** or a **Dog**.")
+
+# -------------------------------
+# Image upload
+# -------------------------------
+uploaded_file = st.file_uploader(
+    "Upload a cat or dog image",
+    type=["jpg", "jpeg", "png"]
+)
